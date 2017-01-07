@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html{
+    /*background: url("images/1jcel81di6y-carl-newton.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    
+    background-color: #333;
+}
+
+.welcome{
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.welcome h1{
+    font-size: 40px;
+    text-align: center;
+    color: #4169E1;
+}
+
+.welcome h2{
+    font-size: 25px;
+    text-align: center;
+    color: deepskyblue;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#clockBox{
+    width: 450px;
+    height: 450px;
+    
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    margin: auto;
+}
+
+#theClock{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: solid 4px white;
+}

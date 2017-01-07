@@ -1,0 +1,1 @@
+this is the css+js clock, second project of js30 
