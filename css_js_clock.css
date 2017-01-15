@@ -61,8 +61,40 @@ a{
 }
 
 #theClock{
-    width: 450px;
-    height: 450px;
+    width: 451px;
+    height: 451px;
     border-radius: 50%;
-    border: solid 4px white;
+    border: solid 6px white;
+    
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.hands{
+    width: 1%;
+    height: 50%;
+    
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    margin: auto;
+    transform-origin: 100% 0;
+    
+    transition: all 1s;
+}
+
+#hoursHand{
+    background-color: green;
+}
+
+#minutesHand{
+    background-color: red;
+}
+
+#secondsHand{
+    background-color: white;
 }
