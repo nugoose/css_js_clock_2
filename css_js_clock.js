@@ -4,7 +4,6 @@ var domReady = function(callback) {
 
 domReady(function() {
     
-    setInterval(function(){
         var t = new Date(),
         h = t.getHours(),
         m = t.getMinutes(),
@@ -13,8 +12,18 @@ domReady(function() {
         mDeg = 'rotate(' + (m * 6) + 'deg)',
         sDeg = 'rotate(' + (s * 6) + 'deg)';
     
-        console.log(h,m,s);
-    
+    setInterval(function(){
+        s += 1;
+        sDeg = 'rotate(' + (s * 6) + 'deg)';
+        if((s*6) % 360 === 0){
+            m += 1;
+            mDeg = 'rotate(' + (m * 6) + 'deg)';
+            if((m*6) % 360 === 0){
+                h += 1;
+                hDeg = 'rotate(' + ((h % 12)*30) + 'deg)';
+            }
+        }
+        
         /////hours////
         document.getElementById('hoursHand').style.transform = hDeg;
         ////minutes////

@@ -12,12 +12,6 @@
 }
 
 html{
-    /*background: url("images/1jcel81di6y-carl-newton.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
-    
     background-color: #333;
 }
 
@@ -48,8 +42,8 @@ a{
 }
 
 #clockBox{
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     
     position: absolute;
     top: 30%;
@@ -58,17 +52,82 @@ a{
     bottom: 0;
     
     margin: auto;
+    
+    display: inline-block;
 }
 
 #theClock{
-    width: 451px;
-    height: 451px;
-    border-radius: 50%;
+    width: 97%;
+    height: 97%;
+    border-radius: 100%;
     border: solid 6px white;
+    
+    text-align: center;
     
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.indicators{
+    width: 1%;
+    height: 100%;
+    background-color: green;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    
+    z-index: 1;
+}
+
+#line2{
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+#line3{
+    -ms-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+#line4{
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#line5{
+    -ms-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+#line6{
+    -ms-transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+}
+
+#indicatorCover{
+    background-color: #333;
+    width: 85%;
+    height: 85%;
+    border-radius: 100%;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    margin: auto;
+    z-index: 2;
 }
 
 .hands{
@@ -82,19 +141,25 @@ a{
     left: 0;
     
     margin: auto;
-    transform-origin: 100% 0;
+    transform-origin: 50% 0;
     
     transition: all 1s;
+    background-color: white;
+    
+    z-index: 3;
 }
 
 #hoursHand{
-    background-color: green;
+    height: 25%;
+    top: 25%;
 }
 
 #minutesHand{
-    background-color: red;
+    height: 35%;
+    top: 35%;
 }
 
 #secondsHand{
-    background-color: white;
+    height: 45%;
+    top: 45%;
 }
